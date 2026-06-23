@@ -572,10 +572,10 @@ function App() {
               <label>Room Type</label>
               <select id="froom" value={formData.room} onChange={handleChange}>
                 <option>Select room type</option>
-                <option>Single Sharing - ₹7,500/month</option>
-                <option>Double Sharing - ₹7,000/month</option>
-                <option>Triple Sharing - ₹6,000/month</option>
-                <option>Four Sharing - ₹5,000/month</option>
+                <option>Single Sharing - ₹12,000/month</option>
+                <option>Double Sharing - ₹7,500/month</option>
+                <option>Triple Sharing - ₹6,500/month</option>
+                <option>Four Sharing - ₹5,500/month</option>
               </select>
             </div>
             <div className="form-group">
