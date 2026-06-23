@@ -238,7 +238,7 @@ function App() {
               <div className="room-type">Single Sharing</div>
               <div className="room-capacity">👤 1 Person</div>
               <div className="room-price">
-                ₹7,500 <span>/month</span>
+                ₹12,000 <span>/month</span>
               </div>
             </div>
             <div className="room-body">
@@ -266,7 +266,7 @@ function App() {
               <div className="room-type">Double Sharing</div>
               <div className="room-capacity">👥 2 Persons</div>
               <div className="room-price">
-                ₹7,000 <span>/month</span>
+                ₹7,500 <span>/month</span>
               </div>
             </div>
             <div className="room-body">
@@ -294,7 +294,7 @@ function App() {
               <div className="room-type">Triple Sharing</div>
               <div className="room-capacity">👥 3 Persons</div>
               <div className="room-price">
-                ₹6,000 <span>/month</span>
+                ₹6,500 <span>/month</span>
               </div>
             </div>
             <div className="room-body">
@@ -322,7 +322,7 @@ function App() {
               <div className="room-type">Four Sharing</div>
               <div className="room-capacity">👥 4 Persons</div>
               <div className="room-price">
-                ₹5,000 <span>/month</span>
+                ₹5,500 <span>/month</span>
               </div>
             </div>
             <div className="room-body">
@@ -577,7 +577,7 @@ function App() {
                 <option>Triple Sharing - ₹6,500/month</option>
                 <option>Four Sharing - ₹5,500/month</option>
 
-                
+
               </select>
             </div>
             <div className="form-group">
