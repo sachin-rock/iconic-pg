@@ -7,11 +7,20 @@ import pgphoto4 from "./assets/pgphoto4.jpeg";
 import pgphoto5 from "./assets/pgphoto5.jpeg";
 import pgphoto6 from "./assets/pgphoto6.jpeg";
 import pgphoto7 from "./assets/pgphoto7.jpeg";
-import locationQR from "./assets/location-qr.png";
+import locationQR from "./assets/location-qr.svg";
 
 const WHATSAPP_NUMBER = "918975147738";
 const waLink = (message) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+// Exact verified Google Maps pin for "Iconic pg for girls"
+// Built from Place CID confirmed against the listing's Place ID
+// (0x3bc2bf001cdf1395:0xd620ef6c7ff5f8b5) — opens the place card directly,
+// not a generic text search.
+const MAPS_EXACT_LINK = "https://www.google.com/maps?cid=15429595572653652149";
+
+const MAPS_EMBED_SRC =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8616086594966!2d73.81548069678956!3d18.489926800000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf001cdf1395%3A0xd620ef6c7ff5f8b5!2sIconic%20pg%20for%20girls!5e0!3m2!1sen!2sin!4v1782192670199!5m2!1sen!2sin";
 
 function Logo() {
   return (
@@ -229,7 +238,7 @@ function App() {
               <div className="room-type">Single Sharing</div>
               <div className="room-capacity">👤 1 Person</div>
               <div className="room-price">
-                ₹12,000 <span>/month</span>
+                ₹7,500 <span>/month</span>
               </div>
             </div>
             <div className="room-body">
@@ -257,7 +266,7 @@ function App() {
               <div className="room-type">Double Sharing</div>
               <div className="room-capacity">👥 2 Persons</div>
               <div className="room-price">
-                ₹7,500 <span>/month</span>
+                ₹7,000 <span>/month</span>
               </div>
             </div>
             <div className="room-body">
@@ -285,7 +294,7 @@ function App() {
               <div className="room-type">Triple Sharing</div>
               <div className="room-capacity">👥 3 Persons</div>
               <div className="room-price">
-                ₹6,500 <span>/month</span>
+                ₹6,000 <span>/month</span>
               </div>
             </div>
             <div className="room-body">
@@ -313,7 +322,7 @@ function App() {
               <div className="room-type">Four Sharing</div>
               <div className="room-capacity">👥 4 Persons</div>
               <div className="room-price">
-                ₹5,500 <span>/month</span>
+                ₹5,000 <span>/month</span>
               </div>
             </div>
             <div className="room-body">
@@ -383,14 +392,14 @@ function App() {
               Karvenagar, Pune, Maharashtra 411052
             </div>
             <a
-              href="https://maps.google.com/?q=Dnydeep+Colony+Hingne+Budrukh+Karvenagar+Pune+411052"
+              href={MAPS_EXACT_LINK}
               target="_blank"
               className="location-map-btn"
             >
               🗺️ Open in Google Maps
             </a>
             <a
-              href="https://maps.google.com/?q=Dnydeep+Colony+Hingne+Budrukh+Karvenagar+Pune+411052"
+              href={MAPS_EXACT_LINK}
               target="_blank"
               className="location-qr"
             >
@@ -406,7 +415,7 @@ function App() {
           </div>
           <div>
             <iframe
-              src="https://maps.google.com/maps?q=Hingne+Budrukh+Karvenagar+Pune+411052&z=15&output=embed"
+              src={MAPS_EMBED_SRC}
               width="100%"
               height="320"
               style={{ border: 0, borderRadius: "14px" }}
@@ -479,7 +488,10 @@ function App() {
               <div>
                 <div className="contact-label">Phone / WhatsApp</div>
                 <a href="tel:+918975147738" className="contact-val">
-                  +91 8975147738
+                  +91 89751 47738
+                </a>
+                <a href="tel:+917218785801" className="contact-val">
+                  +91 72187 85801
                 </a>
               </div>
             </div>
@@ -560,10 +572,10 @@ function App() {
               <label>Room Type</label>
               <select id="froom" value={formData.room} onChange={handleChange}>
                 <option>Select room type</option>
-                <option>Single Sharing - ₹12,000/month</option>
-                <option>Double Sharing - ₹7,500/month</option>
-                <option>Triple Sharing - ₹6,500/month</option>
-                <option>Four Sharing - ₹5,500/month</option>
+                <option>Single Sharing - ₹7,500/month</option>
+                <option>Double Sharing - ₹7,000/month</option>
+                <option>Triple Sharing - ₹6,000/month</option>
+                <option>Four Sharing - ₹5,000/month</option>
               </select>
             </div>
             <div className="form-group">

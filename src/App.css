@@ -712,6 +712,12 @@ section {
   font-size: 15px;
   font-weight: 600;
   color: var(--text);
+  display: block;
+  text-decoration: none;
+}
+
+.contact-val + .contact-val {
+  margin-top: 4px;
 }
 
 .contact-form {
