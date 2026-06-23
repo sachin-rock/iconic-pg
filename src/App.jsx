@@ -576,6 +576,8 @@ function App() {
                 <option>Double Sharing - ₹7,500/month</option>
                 <option>Triple Sharing - ₹6,500/month</option>
                 <option>Four Sharing - ₹5,500/month</option>
+
+                
               </select>
             </div>
             <div className="form-group">
